@@ -1,12 +1,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-   <head>
-      <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-      <title>STRONA</title>
-    <link rel="icon" href="https://github.githubassets.com/pinned-octocat.svg">
-   </head>
-   <body style="color: rgb(255, 255, 255); background-color: rgb(156, 181, 198); background-image: url(images/unnamed.jpg);" alink="#ffffff" link="#ffffff" vlink="#ffffff">
-      <table ="">
+
+<head>
+   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+   <title>STRONA</title>
+   <link rel="icon" href="https://github.githubassets.com/pinned-octocat.svg">
+   
+   <script type="text/javascript" src="scripts/sentencje.js"></script>
+   <script type="text/javascript" src="scripts/timer.js"></script>
+</head>
+
+<body onload="sentencja(); odliczanie(); "
+   style="color: rgb(255, 255, 255); background-color: rgb(156, 181, 198); background-image: url(images/unnamed.jpg);"
+   alink="#ffffff" link="#ffffff" vlink="#ffffff">
+   <table="">
       </table>
       <big>
       </big><big>
@@ -16,10 +23,15 @@
       </big>
       <big>
       </big>
-      <table style="text-align: left; color: rgb(255, 255, 255); width: 100%;" border="1" cellpadding="2" cellspacing="2">
+      <table style="text-align: left; color: rgb(255, 255, 255); width: 100%;" border="1" cellpadding="2"
+         cellspacing="2">
          <tbody>
             <tr>
-               <td class="" style="text-align: center; background-color: rgb(5, 35, 87);"><big><big style="font-family: Book Antiqua;"><big style="font-style: italic;"><big>ASTRONOMIA</big></big><span style="font-family: Book Antiqua;"> </span></big></big></td>
+               <td class="" style="text-align: center; background-color: rgb(5, 35, 87);"><big><big
+                        style="font-family: Book Antiqua;"><big
+                           style="font-style: italic;"><big>ASTRONOMIA</big></big><span
+                           style="font-family: Book Antiqua;">
+                        </span></big></big></td>
             </tr>
          </tbody>
       </table>
@@ -27,13 +39,18 @@
       <table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
          <tbody>
             <tr>
-               <td style="width: 460px; color: rgb(255, 255, 255); background-color: rgb(5, 35, 87); text-align: center;">
+               <td
+                  style="width: 460px; color: rgb(255, 255, 255); background-color: rgb(5, 35, 87); text-align: center;">
                   <div style="margin-left: 80px;"><big><big>STRONA
-                     G&#321;&Oacute;WNA</big></big>
+                           G&#321;&Oacute;WNA</big></big>
                   </div>
                </td>
-               <td style="width: 460px; background-color: rgb(5, 35, 87); color: rgb(255, 255, 255); text-align: center;"><a href="Podstrony/podstrona1.html"><big><big>UK&#321;AD S&#321;ONECZNY&nbsp;</big></big></a></td>
-               <td style="text-align: center; width: 460px; background-color: rgb(5, 35, 87); color: rgb(255, 255, 255);">
+               <td
+                  style="width: 460px; background-color: rgb(5, 35, 87); color: rgb(255, 255, 255); text-align: center;">
+                  <a href="Podstrony/podstrona1.html"><big><big>UK&#321;AD S&#321;ONECZNY&nbsp;</big></big></a>
+               </td>
+               <td
+                  style="text-align: center; width: 460px; background-color: rgb(5, 35, 87); color: rgb(255, 255, 255);">
                   <a href="Podstrony/podstrona2.html"><big><big>GWIAZDY I GWIAZDOZBIORY</big></big></a>
                </td>
             </tr>
@@ -54,17 +71,48 @@
          <tbody>
             <tr>
                <td><big><big style="font-style: italic;">ASTRONOMIA&nbsp;<big>
-                  &ndash; nauka przyrodnicza zajmuj&#261;ca si&#281; badaniem cia&#322; niebieskich oraz
-                  zjawisk, kt&oacute;re zachodz&#261; poza Ziemi&#261;, jak r&oacute;wnie&#380; tych,
-                  kt&oacute;re oddzia&#322;uj&#261; w jej atmosferze, wn&#281;trzu lub na powierzchni, a
-                  s&#261; pochodzenia pozaplanetarnego (np. neutrina, wt&oacute;rne
-                  promieniowanie kosmiczne). Skoncentrowana jest na fizyce, chemii,
-                  meteorologii i ruchu cia&#322; niebieskich, zajmuje si&#281; tak&#380;e powstaniem i
-                  rozwojem (ewolucj&#261;) Wszech&#347;wiata.</big></big></big>
+                           &ndash; nauka przyrodnicza zajmuj&#261;ca si&#281; badaniem cia&#322; niebieskich oraz
+                           zjawisk, kt&oacute;re zachodz&#261; poza Ziemi&#261;, jak r&oacute;wnie&#380; tych,
+                           kt&oacute;re oddzia&#322;uj&#261; w jej atmosferze, wn&#281;trzu lub na powierzchni, a
+                           s&#261; pochodzenia pozaplanetarnego (np. neutrina, wt&oacute;rne
+                           promieniowanie kosmiczne). Skoncentrowana jest na fizyce, chemii,
+                           meteorologii i ruchu cia&#322; niebieskich, zajmuje si&#281; tak&#380;e powstaniem i
+                           rozwojem (ewolucj&#261;) Wszech&#347;wiata.</big></big></big>
                </td>
             </tr>
          </tbody>
       </table>
       <br>
-   </body>
+      <p id="id01">Stary tekst</p>
+      <script>
+         var element = document.getElementById("id01");
+         element.innerHTML = "Nowy tekst w tym samym akapicie";
+      </script>
+
+      <div>
+         <script>
+            var sent = ['Kogut myślał o niedzieli, a w sobotę łeb ucięli', 'Kto w poniedziałek przepróżnuje, we wtorek nie będzie miał co jeść', 'Ostatni wtorek wskazuje, jaka pogoda w poście panuje', 'Wtorek środę wziął pod brodę. Chodźmy sitkiem czerpać wodę', 'Nie pij Piotrek, nie pij w czwartek. Picie w czwartek nic niewarte', 'W piątek zły początek', 'Przy sobocie po robocie'];
+            var nazwy_dni = ['niedziela', 'poniedziałek', 'wtorek', 'środa', 'czwartek', 'piątek', 'sobota'];
+            var nd = new Date().getDay();
+            var dd = new Date().getDate();
+            if (dd < 10) dd = "0" + dd;
+            var mm = new Date().getMonth() + 1;
+            if (mm < 10) mm = "0" + mm;
+            var rr = new Date().getFullYear();
+            document.write("Dzisiaj jest " + nazwy_dni[nd] + ', ' + dd + '.' + mm + '.' + rr + '. ' + '<br>***<br>' + sent[nd]);
+         </script>
+      </div>
+
+      <br>
+      <br>
+
+      <div id="powiedzenia"></div>
+
+      <br>
+      <br>
+
+      <div id="zegar"></div>
+
+</body>
+
 </html>
